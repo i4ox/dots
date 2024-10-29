@@ -5,8 +5,11 @@ return {
         file = {
             ['.keep'] = { glyph = '󰊢', hl = 'MiniIconsGrey' },
             ['devcontainer.json'] = { glyph = '', hl = 'MiniIconsAzure' },
+            ['go.mod'] = { glyph = "", hl = "MiniIconsAzure" },
+            ['go.sum'] = { glyph = "", hl = "MiniIconsAzure" },
         },
         filetype = {
+            go = { glyph = "", hl = "MiniIconsAzure" },
             dotenv = { glyph = '', hl = 'MiniIconsYellow' },
         },
     },
