@@ -7,3 +7,7 @@
 ### Oil as file manager
 
 ![aye](./assets/oilfm.png)
+
+### Neogit as git client
+
+![aye](./assets/neogit.png)
