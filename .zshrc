@@ -1,10 +1,10 @@
 export DOTFILES="$HOME/DOTS"
 
-source $DOTFILES/zsh/env.zsh --source_only
-source $DOTFILES/zsh/cmd.zsh --source_only
-source $DOTFILES/zsh/aliases.zsh --source_only
-source $DOTFILES/zsh/zap.zsh --source_only
-source $DOTFILES/zsh/hooks.zsh --source_only
+source $HOME/.config/zsh/env.zsh --source_only
+source $HOME/.config/zsh/cmd.zsh --source_only
+source $HOME/.config/zsh/aliases.zsh --source_only
+source $HOME/.config/zsh/zap.zsh --source_only
+source $HOME/.config/zsh/hooks.zsh --source_only
 
 setopt extended_glob
 setopt BASH_REMATCH
