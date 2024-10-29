@@ -40,6 +40,7 @@ alias tmls="tmux ls"
 
 # Change default commands
 alias cd="z"
+alias bat="batcat --style=plain"
 alias lh="eza --icons -l --color=always --group-directories-first --octal-permissions --no-permissions"
 alias lah="eza --icons -al --color=always --group-directories-first --octal-permissions --no-permissions"
 alias ls="eza --icons --color=always --group-directories-first"
