@@ -1,0 +1,7 @@
+--target=/home/asa
+--ignore=.stowrc
+--ignore=playbook.yml
+--ignore=setup.sh
+--ignore=\.vscode
+--ignore=\playbooks
+--ignore=\assets
