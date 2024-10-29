@@ -10,3 +10,6 @@ require("lazy-plugins")
 
 -- [[ Load keymaps ]]
 require("keymaps").general()
+
+-- [[ Setup custom statusline ]]
+require("custom.statusline")
