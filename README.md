@@ -11,3 +11,9 @@
 ### Neogit as git client
 
 ![aye](./assets/neogit.png)
+
+### Vim-Dadbod as database explorer
+
+Запускается при помощи команды: `DBUIToggle`.
+
+![aye](./assets/dadbod.png)
