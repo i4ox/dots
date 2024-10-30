@@ -21,3 +21,12 @@
 ### Telescope для поиска файлов
 
 ![aye](./assets/telescope.png)
+
+### Поддержка `Folding` функционала
+
+- **zc** - Свернуть.
+- **zo** - Развернуть.
+- **zM** - Свернуть все.
+- **zR** - Развернуть все.
+
+![aye](./assets/fold_support.png)

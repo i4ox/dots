@@ -47,6 +47,13 @@ local options = {
     -- Better completion experience
     completeopt = "menuone,noselect",
 
+    -- [[ Folds ]]
+    foldcolumn = "1",
+    foldlevel = 99,
+    foldlevelstart = 99,
+    foldenable = true,
+    fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]],
+
     -- [[ Misc. ]]
     -- Decrease update time
     updatetime = 50,
