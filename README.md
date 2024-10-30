@@ -4,16 +4,20 @@
 
 ## NeoVim
 
-### Oil as file manager
+### Oil в качестве файлового менеджера
 
 ![aye](./assets/oilfm.png)
 
-### Neogit as git client
+### Neogit в качестве клиента Git
 
 ![aye](./assets/neogit.png)
 
-### Vim-Dadbod as database explorer
+### Vim-Dadbod в качестве менеджера баз данных
 
 Запускается при помощи команды: `DBUIToggle`.
 
 ![aye](./assets/dadbod.png)
+
+### Telescope для поиска файлов
+
+![aye](./assets/telescope.png)
