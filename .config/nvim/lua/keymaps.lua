@@ -19,6 +19,7 @@ function M.telescope()
     key('n', '<Leader>sb', '<Cmd>Telescope buffers<CR>') -- Search the Buffers
     key('n', '<Leader>so', '<Cmd>Telescope oldfiles<CR>') -- Search the Oldfiles
     key('n', '<Leader>sh', '<Cmd>Telescope help_tags<CR>') -- Search the Help
+    key("n", "<Leader>st", vim.cmd.TodoTelescope) -- Search the Todos
 end
 
 function M.comment()
