@@ -8,10 +8,12 @@ function M.general()
     -- Moving lines up/down
     key("v", "J", ":m '>+1<CR>gv=gv", { silent = true })
     key("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
+
+    key("n", "<C-c>", "<Cmd>bdelete!<Cr>", { desc = "Close the buffer" })
 end
 
 function M.file_manager()
-    key("n", "-", "<Cmd>Oil<Cr>", { desc = "Open parent directory"})
+    key("n", "-", "<Cmd>Oil<Cr>", { desc = "Open parent directory" })
 end
 
 function M.git_client()
