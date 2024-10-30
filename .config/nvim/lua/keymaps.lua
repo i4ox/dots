@@ -12,6 +12,20 @@ function M.general()
     key("n", "<C-c>", "<Cmd>bdelete!<Cr>", { desc = "Close the buffer" })
 end
 
+function M.telescope()
+    key('n', '<Leader>sf', '<Cmd>Telescope find_files<CR>') -- Search the Files
+    key('n', '<Leader>sw', '<Cmd>Telescope grep_string<CR>') -- Search the Word
+    key('n', '<Leader>sg', '<Cmd>Telescope live_grep<CR>') -- Search by Grep
+    key('n', '<Leader>sb', '<Cmd>Telescope buffers<CR>') -- Search the Buffers
+    key('n', '<Leader>so', '<Cmd>Telescope oldfiles<CR>') -- Search the Oldfiles
+    key('n', '<Leader>sh', '<Cmd>Telescope help_tags<CR>') -- Search the Help
+end
+
+function M.comment()
+    vim.keymap.set("n", "gcc", vim.cmd.CommentToggle, { silent = true })
+    vim.keymap.set("v", "gcc", ":'<,'>CommentToggle<Cr>", { silent = true })
+end
+
 function M.file_manager()
     key("n", "-", "<Cmd>Oil<Cr>", { desc = "Open parent directory" })
 end
