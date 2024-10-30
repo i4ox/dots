@@ -10,7 +10,7 @@ local options = {
 	cursorline = false,
 	-- Disable cursor column highlighting
 	cursorcolumn = false,
-	
+
 	-- [[ Indenting ]]
 	-- Enable break indent
 	breakindent = true,
@@ -52,7 +52,7 @@ local options = {
     foldlevel = 99,
     foldlevelstart = 99,
     foldenable = true,
-    fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]],
+    fillchars = [[eob: ,fold: ,foldopen:▾,foldsep: ,foldclose:▸]],
 
     -- [[ Misc. ]]
     -- Decrease update time
