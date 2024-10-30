@@ -18,3 +18,10 @@
   - [ ] LSP
   - [ ] Format
   - [ ] Lint
+
+## Supported languages
+
+- [ ] Golang
+- [ ] Bash
+- [ ] Yaml
+- [ ] Json

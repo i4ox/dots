@@ -30,3 +30,7 @@
 - **zR** - Развернуть все.
 
 ![aye](./assets/fold_support.png)
+
+### Поддержка протокола LSP
+
+![aye](./assets/lsp.png)
