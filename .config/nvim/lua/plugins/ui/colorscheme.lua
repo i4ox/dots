@@ -51,11 +51,11 @@ return {
     opts = {
         options = {
             transparent = true,
-	    terminal_colors = true,
+            terminal_colors = true,
         },
     },
     config = function(_, opts)
         require("nightfox").setup(opts)
-        vim.cmd [[colorscheme carbonfox]]
+        vim.cmd([[colorscheme carbonfox]])
     end,
 }

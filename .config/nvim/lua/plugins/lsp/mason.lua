@@ -1,15 +1,14 @@
 return {
-    'williamboman/mason.nvim',
+    "williamboman/mason.nvim",
     dependencies = {
         {
-            'williamboman/mason-lspconfig.nvim',
-            config = function()end,
-
+            "williamboman/mason-lspconfig.nvim",
+            config = function() end,
         },
     },
-    cmd = 'Mason',
-    build = ':MasonUpdate',
-    opts_extend = { 'ensure_installed' },
+    cmd = "Mason",
+    build = ":MasonUpdate",
+    opts_extend = { "ensure_installed" },
     opts = {
         ensure_installed = {
             -- configs
@@ -18,19 +17,19 @@ return {
             -- markdown
             -- 'markdownlint',
             -- lua
-            'lua-language-server',
-            'stylua',
-            'luacheck',
+            "lua-language-server",
+            "stylua",
+            "luacheck",
         },
     },
     config = function(_, opts)
-        require('mason').setup(opts)
-        local mr = require('mason-registry')
-        mr:on('package:install:success', function()
+        require("mason").setup(opts)
+        local mr = require("mason-registry")
+        mr:on("package:install:success", function()
             vim.defer_fn(function()
                 -- trigger FileType event to possibly load this newly installed LSP server
-                require('lazy.core.handler.event').trigger({
-                    event = 'FileType',
+                require("lazy.core.handler.event").trigger({
+                    event = "FileType",
                     buf = vim.api.nvim_get_current_buf(),
                 })
             end, 100)
@@ -44,5 +43,5 @@ return {
                 end
             end
         end)
-    end
+    end,
 }

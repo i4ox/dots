@@ -1,6 +1,6 @@
 return {
     "neovim/nvim-lspconfig",
-    event = { 'BufReadPost', 'BufNewFile' },
+    event = { "BufReadPost", "BufNewFile" },
     opts = function()
         local opts = {
             diagnostics = {
@@ -8,16 +8,20 @@ return {
                 update_in_insert = true,
                 virtual_text = {
                     spacing = 4,
-                    source = 'if_many',
-                    prefix = '●',
+                    source = "if_many",
+                    prefix = "●",
                 },
                 severity_sort = true,
                 signs = {
                     text = {
-                        [vim.diagnostic.severity.ERROR] = '',
-                        [vim.diagnostic.severity.WARN] = '',
-                        [vim.diagnostic.severity.HINT] = '',
-                        [vim.diagnostic.severity.INFO] = '',
+                        -- [vim.diagnostic.severity.ERROR] = '',
+                        -- [vim.diagnostic.severity.WARN] = '',
+                        -- [vim.diagnostic.severity.HINT] = '',
+                        -- [vim.diagnostic.severity.INFO] = '',
+                        [vim.diagnostic.severity.ERROR] = "E",
+                        [vim.diagnostic.severity.WARN] = "W",
+                        [vim.diagnostic.severity.HINT] = "I",
+                        [vim.diagnostic.severity.INFO] = "H",
                     },
                 },
             },
@@ -55,9 +59,9 @@ return {
         vim.diagnostic.config(vim.deepcopy(opts.diagnostics))
 
         local servers = opts.servers
-        local has_cmp, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
+        local has_cmp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
         local capabilities = vim.tbl_deep_extend(
-            'force',
+            "force",
             {},
             vim.lsp.protocol.make_client_capabilities(),
             has_cmp and cmp_nvim_lsp.default_capabilities() or {},
@@ -65,7 +69,7 @@ return {
         )
 
         local function setup(server)
-            local server_opts = vim.tbl_deep_extend('force', {
+            local server_opts = vim.tbl_deep_extend("force", {
                 capabilities = vim.deepcopy(capabilities),
             }, servers[server] or {})
             if server_opts.enabled == false then
@@ -76,18 +80,18 @@ return {
                 if opts.setup[server](server, server_opts) then
                     return
                 end
-            elseif opts.setup['*'] then
-                if opts.setup['*'](server, server_opts) then
+            elseif opts.setup["*"] then
+                if opts.setup["*"](server, server_opts) then
                     return
                 end
             end
-            require('lspconfig')[server].setup(server_opts)
+            require("lspconfig")[server].setup(server_opts)
         end
 
-        local have_mason, mlsp = pcall(require, 'mason-lspconfig')
+        local have_mason, mlsp = pcall(require, "mason-lspconfig")
         local all_mslp_servers = {}
         if have_mason then
-            all_mslp_servers = vim.tbl_keys(require('mason-lspconfig.mappings.server').lspconfig_to_package)
+            all_mslp_servers = vim.tbl_keys(require("mason-lspconfig.mappings.server").lspconfig_to_package)
         end
 
         local ensure_installed = {} ---@type string[]

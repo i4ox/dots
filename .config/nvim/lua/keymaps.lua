@@ -3,7 +3,7 @@ local key = vim.keymap.set
 
 function M.general()
     -- Select all
-    key('n', '<C-a>', 'gg<S-v>G')
+    key("n", "<C-a>", "gg<S-v>G")
 
     -- Moving lines up/down
     key("v", "J", ":m '>+1<CR>gv=gv", { silent = true })
@@ -13,12 +13,12 @@ function M.general()
 end
 
 function M.telescope()
-    key('n', '<Leader>sf', '<Cmd>Telescope find_files<CR>') -- Search the Files
-    key('n', '<Leader>sw', '<Cmd>Telescope grep_string<CR>') -- Search the Word
-    key('n', '<Leader>sg', '<Cmd>Telescope live_grep<CR>') -- Search by Grep
-    key('n', '<Leader>sb', '<Cmd>Telescope buffers<CR>') -- Search the Buffers
-    key('n', '<Leader>so', '<Cmd>Telescope oldfiles<CR>') -- Search the Oldfiles
-    key('n', '<Leader>sh', '<Cmd>Telescope help_tags<CR>') -- Search the Help
+    key("n", "<Leader>sf", "<Cmd>Telescope find_files<CR>") -- Search the Files
+    key("n", "<Leader>sw", "<Cmd>Telescope grep_string<CR>") -- Search the Word
+    key("n", "<Leader>sg", "<Cmd>Telescope live_grep<CR>") -- Search by Grep
+    key("n", "<Leader>sb", "<Cmd>Telescope buffers<CR>") -- Search the Buffers
+    key("n", "<Leader>so", "<Cmd>Telescope oldfiles<CR>") -- Search the Oldfiles
+    key("n", "<Leader>sh", "<Cmd>Telescope help_tags<CR>") -- Search the Help
     key("n", "<Leader>st", vim.cmd.TodoTelescope) -- Search the Todos
 end
 

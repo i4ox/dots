@@ -1,4 +1,3 @@
-
 -- [[ Load options ]]
 require("options")
 

@@ -2,7 +2,7 @@ return {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' },
+                globals = { "vim" },
             },
             workspace = {
                 checkThirdParty = false,
@@ -11,18 +11,18 @@ return {
                 enable = true,
             },
             completion = {
-                callSnippet = 'Replace',
+                callSnippet = "Replace",
             },
             doc = {
-                privateName = { '^_' },
+                privateName = { "^_" },
             },
             hint = {
                 enable = true,
                 setType = false,
                 paramType = true,
-                paramName = 'Disable',
-                semicolon = 'Disable',
-                arrayIndex = 'Disable',
+                paramName = "Disable",
+                semicolon = "Disable",
+                arrayIndex = "Disable",
             },
         },
     },

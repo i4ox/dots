@@ -3,7 +3,7 @@ return {
         yaml = {
             schemaStore = {
                 enable = false,
-                url = '',
+                url = "",
             },
             schemas = require("schemastore").yaml.schemas(),
         },

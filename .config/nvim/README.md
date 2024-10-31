@@ -15,7 +15,7 @@
 - [ ] Editor
   - [X] Autocomplete
   - [X] Treesitter
-  - [ ] LSP
+  - [X] LSP
   - [ ] Format
   - [ ] Lint
 
@@ -23,5 +23,5 @@
 
 - [ ] Golang
 - [ ] Bash
-- [ ] Yaml
-- [ ] Json
+- [X] Yaml
+- [X] Json

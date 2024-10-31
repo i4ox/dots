@@ -15,11 +15,11 @@ return {
             list = false,
         },
         keymaps = {
-            ['-'] = 'actions.parent',
-            ['+'] = 'actions.select',
-            ['<CR>'] = 'actions.select',
-            ['g?'] = 'actions.show_help',
-            ['<C-h>'] = 'actions.toggle_hidden',
+            ["-"] = "actions.parent",
+            ["+"] = "actions.select",
+            ["<CR>"] = "actions.select",
+            ["g?"] = "actions.show_help",
+            ["<C-h>"] = "actions.toggle_hidden",
         },
     },
     config = function(_, opts)

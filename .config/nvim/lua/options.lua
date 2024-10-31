@@ -1,37 +1,37 @@
 local options = {
-	-- [[ Columns ]]
-	-- Display line numbers
-	number = true,
-	-- Use relative numbers
-	relativenumber = true,
-	-- Keep signcolumt on by default
-	signcolumn = "yes",
-	-- Disable cursor line highlighting
-	cursorline = false,
-	-- Disable cursor column highlighting
-	cursorcolumn = false,
+    -- [[ Columns ]]
+    -- Display line numbers
+    number = true,
+    -- Use relative numbers
+    relativenumber = true,
+    -- Keep signcolumt on by default
+    signcolumn = "yes",
+    -- Disable cursor line highlighting
+    cursorline = false,
+    -- Disable cursor column highlighting
+    cursorcolumn = false,
 
-	-- [[ Indenting ]]
-	-- Enable break indent
-	breakindent = true,
-	-- Autoindent when going on a new line
-	smartindent = true,
-	-- Use spaces instead of tabs
-	expandtab = true,
-	-- Use 4 spaces for indent
-	tabstop = 4,
-	softtabstop = 4,
-	shiftwidth = 4,
+    -- [[ Indenting ]]
+    -- Enable break indent
+    breakindent = true,
+    -- Autoindent when going on a new line
+    smartindent = true,
+    -- Use spaces instead of tabs
+    expandtab = true,
+    -- Use 4 spaces for indent
+    tabstop = 4,
+    softtabstop = 4,
+    shiftwidth = 4,
 
-	-- [[ Undofile ]]
-	undofile = true,
-	undodir = os.getenv("HOME") .."/.vim/undodir/",
+    -- [[ Undofile ]]
+    undofile = true,
+    undodir = os.getenv("HOME") .. "/.vim/undodir/",
 
-	-- [[ Backup ]]
-	backup = false,
+    -- [[ Backup ]]
+    backup = false,
 
-	-- [[ Swapfile ]]
-	swapfile = false,
+    -- [[ Swapfile ]]
+    swapfile = false,
 
     -- [[ Searching ]]
     -- Case-sensitive searching
@@ -64,12 +64,12 @@ local options = {
     -- Clipboard
     clipboard = "unnamedplus",
     -- Disable wrap
-    wrap = false
+    wrap = false,
 }
 
 local globals = {
-    mapleader = ' ',
-    maplocalleader = ' ',
+    mapleader = " ",
+    maplocalleader = " ",
 }
 
 for k, v in pairs(options) do
