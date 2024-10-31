@@ -24,7 +24,7 @@
 ## Supported languages
 
 - [ ] Golang
-- [ ] Bash
+- [X] Bash
 - [X] Markdown
 - [X] Yaml
 - [X] Json

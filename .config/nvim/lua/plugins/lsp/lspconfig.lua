@@ -51,6 +51,7 @@ return {
                 yamlls = require("plugins.lsp.servers.yamlls"),
                 jsonls = require("plugins.lsp.servers.jsonls"),
                 marksman = require("plugins.lsp.servers.marksman"),
+                bashls = require("plugins.lsp.servers.bashls"),
             },
             setup = {},
         }

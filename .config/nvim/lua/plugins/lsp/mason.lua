@@ -19,6 +19,9 @@ return {
             -- markdown
             "marksman",
             "markdownlint",
+            -- bash
+            "bash-language-server",
+            "shellcheck",
             -- lua
             "lua-language-server",
             "stylua",

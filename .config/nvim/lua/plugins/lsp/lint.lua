@@ -6,6 +6,7 @@ return {
             yaml = { "yamllint" },
             json = { "jsonlint" },
             markdown = { "markdownlint" },
+            sh = { "shellcheck" },
         }
         vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             callback = function()
