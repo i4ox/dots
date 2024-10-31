@@ -50,6 +50,7 @@ return {
                 lua_ls = require("plugins.lsp.servers.lua_ls"),
                 yamlls = require("plugins.lsp.servers.yamlls"),
                 jsonls = require("plugins.lsp.servers.jsonls"),
+                marksman = require("plugins.lsp.servers.marksman"),
             },
             setup = {},
         }

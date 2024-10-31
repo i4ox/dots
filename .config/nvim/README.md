@@ -18,12 +18,13 @@
   - [X] LSP
   - [X] Format
   - [X] Lint
-- [ ] Markdown support
+- [X] Markdown support
 - [ ] Debug
 
 ## Supported languages
 
 - [ ] Golang
 - [ ] Bash
+- [X] Markdown
 - [X] Yaml
 - [X] Json

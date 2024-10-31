@@ -17,7 +17,8 @@ return {
             "json-lsp",
             "jsonlint",
             -- markdown
-            -- 'markdownlint',
+            "marksman",
+            "markdownlint",
             -- lua
             "lua-language-server",
             "stylua",

@@ -5,6 +5,7 @@ return {
             lua = { "luacheck" },
             yaml = { "yamllint" },
             json = { "jsonlint" },
+            markdown = { "markdownlint" },
         }
         vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             callback = function()

@@ -34,3 +34,7 @@
 ### Поддержка протокола LSP
 
 ![aye](./assets/lsp.png)
+
+### Полная поддержка Markdown
+
+![aye](./assets/markdown.png)
