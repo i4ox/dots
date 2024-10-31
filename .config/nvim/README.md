@@ -12,12 +12,14 @@
 - [X] File Manager
 - [X] Git client
 - [X] Database Explorer
-- [ ] Editor
+- [X] Editor
   - [X] Autocomplete
   - [X] Treesitter
   - [X] LSP
-  - [ ] Format
-  - [ ] Lint
+  - [X] Format
+  - [X] Lint
+- [ ] Markdown support
+- [ ] Debug
 
 ## Supported languages
 

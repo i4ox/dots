@@ -12,8 +12,10 @@ return {
     opts = {
         ensure_installed = {
             -- configs
-            -- 'yaml-language-server',
-            -- 'json-lsp',
+            "yaml-language-server",
+            "yamllint",
+            "json-lsp",
+            "jsonlint",
             -- markdown
             -- 'markdownlint',
             -- lua
