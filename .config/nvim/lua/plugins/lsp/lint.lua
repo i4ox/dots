@@ -7,6 +7,7 @@ return {
             json = { "jsonlint" },
             markdown = { "markdownlint" },
             sh = { "shellcheck" },
+            go = { "golangcilint" },
         }
         vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
             callback = function()

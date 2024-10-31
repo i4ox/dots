@@ -23,7 +23,7 @@
 
 ## Supported languages
 
-- [ ] Golang
+- [X] Golang
 - [X] Bash
 - [X] Markdown
 - [X] Yaml

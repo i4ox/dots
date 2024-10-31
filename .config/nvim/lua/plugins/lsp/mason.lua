@@ -22,6 +22,12 @@ return {
             -- bash
             "bash-language-server",
             "shellcheck",
+            -- go
+            "gopls",
+            "golangci-lint",
+            "gofumpt",
+            "goimports-reviser",
+            "golines",
             -- lua
             "lua-language-server",
             "stylua",

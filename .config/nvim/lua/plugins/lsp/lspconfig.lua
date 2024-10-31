@@ -47,6 +47,7 @@ return {
                 timeout_ms = nil,
             },
             servers = {
+                gopls = require("plugins.lsp.servers.gopls"),
                 lua_ls = require("plugins.lsp.servers.lua_ls"),
                 yamlls = require("plugins.lsp.servers.yamlls"),
                 jsonls = require("plugins.lsp.servers.jsonls"),

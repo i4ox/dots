@@ -3,16 +3,13 @@ return {
     lazy = true,
     event = { "BufReadPre", "BufNewFile" },
     opts = {
-        formatter_by_ft = {
-            options = {
-                lua = { "stylua" },
-            },
+        formatters_by_ft = {
+            lua = { "stylua" },
+            go = { "golines", "gofumpt", "goimports-reviser" },
         },
         format_on_save = {
-            pattern = ".lua",
+            lsp_format = "fallback",
             timeout_ms = 500,
-            async = false,
-            lsp_fallback = true,
         },
     },
     config = function(_, opts)
