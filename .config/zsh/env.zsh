@@ -14,6 +14,7 @@ eval "$(zoxide init zsh)"
 eval "$(ssh-agent -s)"
 
 # Mics
+export MASON_BIN="$HOME/.local/share/nvim/mason/bin"
 export STARSHIP_CONFIG="$DOTFILES/starship/starship.toml"
-export PATH="$DOTFILES/bin:$PATH"
+export PATH="$DOTFILES/bin:$MASON_BIN:$PATH"
 export CURSOR_TYPE="ibeam"
