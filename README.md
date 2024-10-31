@@ -38,3 +38,7 @@
 ### Полная поддержка Markdown
 
 ![aye](./assets/markdown.png)
+
+### Полная поддержка Bash
+
+![aye](./assets/bash.png)
