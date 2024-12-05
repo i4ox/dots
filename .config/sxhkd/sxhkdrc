@@ -1,0 +1,51 @@
+# MAIN HOTKEYS
+super + Return
+    wezterm
+super + Escape
+    pkill -USR1 -x sxhkd
+super + d
+    dmenu_run -nb '#1d1d1d' -nf '#f6f5f4' -sb '#1d1d1d' -sf '#1a5fb4' -l 1 | zsh -i -c 'source ~/.zshrc && exec $REPLY'
+super + e
+    thunar
+Print
+    flameshot gui
+super + Print
+    flameshot screen
+
+# I3 HOTKEYS
+super + shift + r
+    i3-msg restart
+super + shift + e
+    i3-msg exit
+super + shift + q
+    i3-msg kill
+super + f
+    i3-msg fullscreen toggle
+super + p
+  i3-msg move workspace to output right
+super + h
+    i3-msg split h
+super + v
+    i3-msg split v
+super + {Left, Down, Up, Right}
+    i3-msg focus {left, down, up, right}
+super + shift + {Left, Down, Up, Right}
+    i3-msg move {left, down, up, right}
+super + {1,2,3,4,5,6,7,8,9,0}
+    i3-msg workspace number {1,2,3,4,5,6,7,8,9,0}
+super + shift + {1,2,3,4,5,6,7,8,9,0}
+    i3-msg move container to workspace number {1,2,3,4,5,6,7,8,9,0}
+
+# SYSTEM HOTKEYS
+super + XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+super + XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+super + XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+super + XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+super + XF86MonBrightnessDown
+    xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep 'Brightness:' | awk '{print $2}') - 0.1" | bc)
+super + XF86MonBrightnessUp
+    xrandr --output eDP-1 --brightness $(echo "$(xrandr --verbose | grep 'Brightness:' | awk '{print $2}') + 0.1" | bc)

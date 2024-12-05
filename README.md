@@ -1,6 +1,7 @@
-<div align="center">
-    <h1>[ DEBIAN DOTFILES ]</h1>
-</div>
+<!--markdownlint-disable  MD041 MD033-->
+# This is i3
+
+![i3wm](./assets/i3wm.png)
 
 ## NeoVim
 

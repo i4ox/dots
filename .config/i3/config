@@ -1,0 +1,70 @@
+# Set global inner and outer gaps
+gaps inner 20
+
+# Main Mod
+set $mod Mod4
+
+# Font for window titles
+font pango:monospace 8
+
+# Start XDG autostart .desktop files using dex.
+exec --no-startup-id dex --autostart --environment i3
+
+# NetworkManager is the most popular way to manage wireless networks on Linux.
+exec --no-startup-id nm-applet
+
+# Launch SXHKD - bindings manager(There: ~/.config/sxhkd/sxhkdrc)
+exec --no-startup-id sxhkd
+
+# Nitrogen for wallpaper support
+exec --no-startup-id nitrogen --restore
+
+# D-Bus session which provides by PolicyKit-Gnome
+#exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+exec --no-startup-id sh "/home/i4ox/.config/i3/scripts/hiddify.sh"
+
+# Use mouse+$mod to drag floating windows to their wanted position.
+floating_modifier $mod
+
+# Toggle tiling / floating(DON'T DELETE)
+bindsym $mod+Shift+space floating toggle
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Add window bar
+for_window [class=".*"] border pixel 0
+
+# Exclude from tiling
+for_window [class="Nautilus"] floating enable
+for_window [class="Hiddify"] floating enable
+
+# Other settings
+smart_gaps off
+
+set $base     #282c34
+set $text     #98c379
+set $overlay  #1e2127
+client.focused           $text    $base $text  #61afef      #61afef
+client.focused_inactive  $text     $base $text  $overlay   $overlay
+client.unfocused         $text     $base $text  $overlay   $overlay
+client.urgent            $text     $base $text  #e06c75  #e06c75
+client.placeholder       $base     $base $text  $overlay   $overlay
+client.background        $base
+
+# Picom
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
+# Polybar
+exec_always --no-startup-id sh "/home/i4ox/.config/polybar/scripts/launch.sh"
